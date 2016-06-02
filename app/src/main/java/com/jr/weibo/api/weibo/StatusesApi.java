@@ -41,7 +41,7 @@ public class StatusesApi {
     public Observable<StatusesData> getPublic(){
 //        Map<String,String> params = mRequestHelper.getHttpRequestMap();
 //        String token = params.get("token");
-        String token = mUserStorage.getToken();
+        String token = mUserStorage.getToken().getToken();
         return mStatusesService.getPublic(token).subscribeOn(Schedulers.io());
     }
     /**
@@ -50,7 +50,7 @@ public class StatusesApi {
     public Observable<StatusesData> getHome(){
 //        Map<String ,String > params = mRequestHelper.getHttpRequestMap();
 //        String token = params.get("token");
-        String token = mUserStorage.getToken();
+        String token = mUserStorage.getToken().getToken();
         return mStatusesService.getHome(token).subscribeOn(Schedulers.io());
     }
 }

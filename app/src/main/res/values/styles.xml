@@ -6,20 +6,25 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@android:color/white</item>
     </style>
     <!--Theme.AppCompat.Light.NoActionBar-->
     <style name="AppThemeNO" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#B00B12</item>
+        <item name="colorPrimaryDark">#B00B12</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <style name="AppTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimaryDark">@android:color/holo_red_light</item>
-        <item name="colorPrimary">@android:color/holo_red_light</item>
-        <item name="colorAccent">@android:color/holo_red_light</item>
+        <item name="colorPrimaryDark">#B00B12</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/holo_red_light</item>
+    </style>
+    <style name="activity_enter_fade_in">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 
 </resources>
